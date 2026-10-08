@@ -62,6 +62,16 @@ adb -s <板端序列号> shell 'cd /userdata/dual-person-demo && ./run.sh'
 5. `docs/DEBUG_PLAYBOOK_CN.md`：黑屏、低帧率、无帧和 ROI 偏移排查。
 6. `docs/PORTING_GUIDE_CN.md`：换板和驱动移植。
 7. `docs/VERSION_AND_CHECKSUMS_CN.md`：版本基线与文件完整性说明。
+8. `docs/ARCHITECTURE_AND_LIMITS_CN.md`：当前不足、优化优先级和量化验收建议。
+
+## 当前主要不足
+
+- 两路摄像头节点编号和部分拓扑仍写死，换板需要人工核对。
+- 两颗摄像头没有精确标定，动态 ROI 在不同距离和视场位置会有映射误差。
+- 采集帧仍有 CPU 内存复制，HDMI 合成仍依赖 Python/OpenCV，CPU 和 DDR 开销可以继续降低。
+- 性能来自特定板卡和有限时长的记录；ROI FPS 的历史结果有不同测试口径，长时间温升、端到端时延分位和检测精度评测尚不完整。
+
+完整问题清单、具体改进方案和验收标准见 [当前不足与后续优化路线](docs/ARCHITECTURE_AND_LIMITS_CN.md)。
 
 ## 完整性校验
 

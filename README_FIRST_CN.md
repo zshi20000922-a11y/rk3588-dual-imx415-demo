@@ -20,6 +20,7 @@
 5. `docs/DEBUG_PLAYBOOK_CN.md`：出现黑屏、无帧、低 FPS、ROI 偏移时如何定位。
 6. `docs/PORTING_GUIDE_CN.md`：换板、刷 boot 和验收。
 7. `docs/VERSION_AND_CHECKSUMS_CN.md`：交付基线和关键文件完整性校验。
+8. `docs/ARCHITECTURE_AND_LIMITS_CN.md`：当前不足、优化路线和验收指标。
 
 ## 目录结构
 

@@ -18,6 +18,8 @@
 
 以上数字是当前板端、镜像、驱动、IQ 文件和 YOLOv5n INT8 模型组合下的实测值，不是芯片数据手册上限。
 
+表中 ROI 激活时的全局推理 FPS 按部署脚本默认 `GLOBAL_PERIOD_MS=100` 运行；若直接启动 C++ 二进制，其默认 `--global-period-ms=500`，结果会不同。详细限制和测试口径见 [`ARCHITECTURE_AND_LIMITS_CN.md`](ARCHITECTURE_AND_LIMITS_CN.md)。
+
 ## 2. 本机关键文件
 
 ### 2.1 Demo 源码和脚本
@@ -260,6 +262,8 @@ cd /userdata/dual-person-demo
 ```
 
 ## 6. 当前不足和可优化点
+
+本节是架构摘要。当前代码对应的详细限制、优化顺序和量化验收建议见 [`ARCHITECTURE_AND_LIMITS_CN.md`](ARCHITECTURE_AND_LIMITS_CN.md)。
 
 ### P0：稳定性和可迁移性
 

@@ -73,7 +73,7 @@
 | `VERSION_AND_CHECKSUMS_CN.md` | 本次交付基线、关键文件摘要和刷写边界。 |
 | `SHA256SUMS` | 可直接由 `sha256sum -c` 使用的完整性清单。 |
 | `PORTING_GUIDE_CN.md` | 换板部署、驱动迁移和验收。 |
-| `ARCHITECTURE_AND_LIMITS_CN.md` | 早期架构与限制分析。 |
+| `ARCHITECTURE_AND_LIMITS_CN.md` | 当前不足、优化优先级、建议验收指标和性能声明边界。 |
 | `ORIGINAL_TEST_NOTES_CN.md` | 原始测试记录，保留用于追溯。 |
 
 ## release 和 recovery
