@@ -37,8 +37,13 @@ Sensor ROI 由 V4L2 Sub-device Selection 更新。ROI 模式的 ISP 正常出图
 | `iq/` | ROI 可用 IQ 与 SDK 原始 IQ 对照 |
 | `firmware/` | 已验证的 Linux 6.1 boot 分区镜像 |
 | `release/` | 轻量应用部署包 |
+| `media/` | Demo 运行录屏（压缩版，不含原视频位置元数据） |
 | `recovery/` | 测试板原 IQ 恢复参考文件 |
 | `docs/` | 架构、文件索引、构建、部署、调试和移植说明 |
+
+## 演示录像
+
+[观看/下载双摄动态 ROI Demo 录屏（1280×720，30 FPS，H.264）](media/test3-compressed.mp4)
 
 ## 快速部署
 
